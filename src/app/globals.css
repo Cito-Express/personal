@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --muted: #999999;
+  --secondary: #f9f9f9;
+  --primary: #171717;
+  --line: #d9d9d9;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --secondary: #212121;
+  --muted: #999999;
+  --line: #212121;
+  --primary: #ededed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-secondary: var(--secondary);
+  --color-line: var(--line);
+  --color-primary: var(--primary);
+}
+
+
+
+body {
+ @apply bg-background text-foreground font-sans;
+}
+
+.main {
+  @apply max-w-[90%] 2xl:max-w-[1280px] mx-auto;
+}
+
+.layout {
+  @apply max-w-[90%] md:max-w-[700px] mx-auto;
+}
+
+.center {
+  @apply flex items-center justify-center;
+}
+
+button,
+.btn {
+  @apply cursor-pointer font-medium flex items-center justify-center gap-2 disabled:opacity-50;
+}
+
+.btn-primary {
+  @apply text-white bg-primary;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  @apply hidden;
+}
+
+.hide-scrollbar::-webkit-scrollbar-thumb {
+  @apply hidden;
+}
+
