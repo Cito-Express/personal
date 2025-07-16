@@ -10,8 +10,8 @@ export default function ThemeToggle() {
         setTheme(theme === 'dark' ? 'light' : 'dark')
     }
   return (
-    <div className='center h-10 w-10 rounded-full bg-secondary cursor-pointer border border-line' onClick={toggleTheme}>
-      {theme === 'dark' ? <Sun size={20}/> : <Moon size={20}/>}
+    <div className='center h-10 w-10 cursor-pointer text-foreground' onClick={toggleTheme}>
+      {theme === 'dark' ? <Sun size={22} /> : <Moon size={22}/>}
     </div>
   )
 }

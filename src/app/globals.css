@@ -5,19 +5,25 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --main: #444;
   --muted: #999999;
   --secondary: #f9f9f9;
   --primary: #171717;
-  --line: #d9d9d9;
+  --primary-1: #f54a00;
+  --primary-2: #155dfc;
+  --line: #dedede;
 }
 
 .dark {
   --background: #0a0a0a;
   --foreground: #ededed;
-  --secondary: #212121;
+  --main: #fefefe;
+  --secondary: #121212;
   --muted: #999999;
   --line: #212121;
-  --primary: #ededed;
+  --primary: #fefefe;
+  --primary-1: #f54a00;
+  --primary-2: #155dfc;
 }
 
 @theme inline {
@@ -25,16 +31,23 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-main: var(--main);
   --color-muted: var(--muted);
   --color-secondary: var(--secondary);
   --color-line: var(--line);
   --color-primary: var(--primary);
+  --color-primary-1: var(--primary-1);
+  --color-primary-2: var(--primary-2);
+}
+
+*{
+  @apply outline-none
 }
 
 
 
 body {
- @apply bg-background text-foreground font-sans;
+ @apply bg-background text-main font-sans;
 }
 
 .main {
@@ -55,7 +68,7 @@ button,
 }
 
 .btn-primary {
-  @apply text-white bg-primary;
+  @apply text-white dark:text-[#171717] bg-primary;
 }
 
 .hide-scrollbar::-webkit-scrollbar {

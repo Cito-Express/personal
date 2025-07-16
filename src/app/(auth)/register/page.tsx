@@ -7,8 +7,8 @@ function Register() {
   return (
     <>
       <AuthLayout
-        title="Create an account"
-        description="Please enter your details to create an account"
+        title="Create a personal account"
+        description="Please enter your details to create an account to access our services and get real-time updates on all your shipments."
       >
         <form className="space-y-4">
           <InputWithIcon
@@ -35,8 +35,7 @@ function Register() {
             type="password"
             placeholder="Enter your password"
           />
-          <div className="flex items-center">
-            <div className="flex items-center gap-2">
+            <div className="flex gap-2">
               <input type="checkbox" id="terms" className="accent-primary" />
               <label htmlFor="terms" className="text-muted">
                 I agree to the{" "}
@@ -49,12 +48,11 @@ function Register() {
                 </Link>
               </label>
             </div>
-          </div>
           <ButtonWithLoader
             initialText="Create account"
             loadingText="Creating account..."
             loading={false}
-            className="w-full btn-primary mt-6 h-11 rounded-lg"
+            className="w-full btn-primary mt-6 h-10 rounded-lg"
           />
           <div className="center">
             <p className="text-muted">
