@@ -10,7 +10,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-background/20 backdrop-blur-sm border-b border-line">
         <nav className="main flex items-center justify-between h-[70px]">
             <Link href="/">
-            <Image src={theme === 'dark' ? '/full-white-logo.svg' : '/full-dark-logo.svg'} alt="logo" width={100} height={100} />
+            <Image src={theme === 'dark' ? '/full-white-logo.svg' : '/full-dark-logo.svg'} alt="logo" width={90} height={90} />
             </Link>
 
             <div className="flex items-center gap-4">

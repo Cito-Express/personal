@@ -30,3 +30,9 @@ interface SelectWithIconProps
     value: string;
   }[];
 }
+
+interface DashboardLayoutProps {
+  children: React.ReactNode
+  title: string
+  description?: string
+}

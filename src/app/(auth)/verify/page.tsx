@@ -35,7 +35,7 @@ export default function Verify() {
               type="button"
               initialText="Resend code"
               loadingText="Resending..."
-              loading={false}
+              loading={true}
               className="text-primary font-medium "
             />
         </div>

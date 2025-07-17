@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function page() {
   return (
   <>
-  <AuthLayout title="Welcome Back" description="Please enter your details to send and receive package orders">
+  <AuthLayout title="Welcome Back" description="Sign in to access your packages history and get real-time updates on all your shipments.">
     <form className="space-y-4">
         <InputWithIcon icon={<Mail size={20} />} label="Email Address" type="email" placeholder="Enter your email address" />
         <InputWithIcon icon={<Lock size={20} />} label="Password" type="password" placeholder="Enter your password" />
@@ -18,7 +18,7 @@ export default function page() {
 
             <Link href="/forgot-password" className="text-primary font-medium">Forgot password?</Link>
         </div>
-        <ButtonWithLoader initialText="Login" loadingText="Logging in..." loading={false} className="w-full btn-primary mt-6 h-11 rounded-lg"/>
+        <ButtonWithLoader initialText="Login" loadingText="Logging in..." loading={false} className="w-full btn-primary mt-6 h-10 rounded-lg"/>
         <div className="center">
             <p className="text-muted">
                 Don&apos;t have an account? <Link href="/register" className="text-primary font-medium ">Sign up</Link>

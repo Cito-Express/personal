@@ -4,19 +4,19 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --secondary: #fbfcfc;
   --main: #444;
   --muted: #999999;
-  --secondary: #f9f9f9;
+  --secondary: #fbfcfc;
   --primary: #171717;
   --primary-1: #f54a00;
   --primary-2: #155dfc;
-  --line: #dedede;
+  --line: #f4f5f7;
 }
 
 .dark {
   --background: #0a0a0a;
-  --foreground: #ededed;
+  --foreground: #212121;
   --main: #fefefe;
   --secondary: #121212;
   --muted: #999999;

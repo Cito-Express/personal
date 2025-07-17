@@ -8,11 +8,11 @@ export default function AuthLayout({
   return (
     <>
     <Header />
-    <main className="w-[90%] md:w-[480px] mx-auto space-y-6 mt-10 pb-10">
+    <main className="w-[90%] md:w-[400px] mx-auto space-y-6 mt-10 pb-10">
             
             <div className="">
               <h2 className="text-3xl font-bold text-transparent bg-center bg-clip-text bg-gradient-to-br from-primary-1 to-primary-2">{title}</h2>
-              <p className="text-muted">{description}</p>
+              <p className="text-muted text-sm">{description}</p>
             </div>
           
           {children}
